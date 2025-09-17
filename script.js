@@ -1,6 +1,6 @@
-const buttons=document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".div");
 
-buttons.forEach(button=>{button.addEventListener("click",(e)=>{
-    let div=document.getElementById(`div${e.target.id}`);
-    div.classList.toggle("hidden");
-})});
+buttons.forEach(button=>button.addEventListener("click", (e) => {
+    const content=document.getElementById(`div${e.target.id}`);
+    content.classList.toggle("hidden");
+}));
